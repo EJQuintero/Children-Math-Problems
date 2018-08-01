@@ -1,3 +1,6 @@
+'''The objective of this program is to assist the mastery of basic algebraic word problems.
+The problem will make use of randint function from random library to ensure the numbers in 
+the problem will not repeat themselves, thus making the problem more challenging for the student.'''
 
 def getBlue(var1,var2):
     b = var1 - var2
@@ -12,6 +15,7 @@ def getTotal(times,var1,var2):
     return t
 
 def main():
+    # Fist, define the variables in the main function
     from random import randint
     g = randint(18,68)
     times = randint(6,15)
@@ -19,9 +23,12 @@ def main():
     while g < fewer:
         fewer = randint(12,20)
     right = "Good job! That is the right number of marvels."
+    
+    # Second, present the student with the word problem
     print("Jake has",g,"green marvels. He has",times,"times more red marvels than blue marvels.\n"\
         "He has",fewer,"fewer blue marvels than green marvels.")
     
+    # Third, the student should perform the necessary calculations to answer the individual questions
     userg = eval(input('\nHow many green marvels does Jake have?\t'))
     if userg == g:
         print(right)
