@@ -25,7 +25,7 @@ def main():
     right = "Good job! That is the right number of marvels."
     
     # Second, present the student with the word problem
-    print("Jake has",g,"green marvels. He has",times,"times more red marvels than blue marvels.\n"\
+    print("\nJake has",g,"green marvels. He has",times,"times more red marvels than blue marvels.\n"\
         "He has",fewer,"fewer blue marvels than green marvels.")
     
     # Third, the student should perform the necessary calculations to answer the individual questions
