@@ -21,34 +21,34 @@ total = x + j + n
 
 # State problem
 print('Jake has',a,'times as many Pokemon cards as Mark, and',b,'more cards than Nicki. If Jake, Mark, and Nicki\n'\
-    'have',total,'Pokemon cards between the three of them,')
+    'have',total,'Pokemon cards between the three of them,', end = ' ')
 
 # Create main function
 def main():
-    jake = eval(input('How many cards does Jake have?\t'))
+    jake = eval(input('how many cards does Jake have?\t'))
     if jake == j:
         print('Great Job!')
     else:
         while jake != j:
-            jake = eval(input('Sorry, that is the wrong answer. Please try again. How many cards does Jake have?\t'))
+            jake = eval(input('\nSorry, that is the wrong answer. Please try again. How many cards does Jake have?\t'))
             if jake == j:
                 print('Great Job!')
 
-    nicki = eval(input('How many cards does Nicki have?\t'))
+    nicki = eval(input('\nHow many cards does Nicki have?\t'))
     if nicki == n:
         print('Great Job!')
     else:
         while nicki != n:
-            nicki = eval(input('Sorry, that is the wrong answer. Please try again. How many cards does Nicki have?\t'))
+            nicki = eval(input('\nSorry, that is the wrong answer. Please try again. How many cards does Nicki have?\t'))
             if nicki == n:
                 print('Great Job!')
 
-    mark = eval(input('How many cards does Mark have?\t'))
+    mark = eval(input('\nHow many cards does Mark have?\t'))
     if mark == x:
         print('Great Job!')
     else:
         while mark != x:
-            mark = eval(input('Sorry, that is the wrong answer. Please try again. How many cards does Mark have?\t'))
+            mark = eval(input('\nSorry, that is the wrong answer. Please try again. How many cards does Mark have?\t'))
             if mark == x:
                 print('Great Job!')
 
