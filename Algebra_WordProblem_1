@@ -39,7 +39,7 @@ def main():
                 print(right)
 
     userb = eval(input('\nHow many blue marvels does Jake have?\t'))
-    if userg == g:
+    if userg == getBlue(g, fewer):
         print(right)
     else:
         while userb != getBlue(g, fewer):
