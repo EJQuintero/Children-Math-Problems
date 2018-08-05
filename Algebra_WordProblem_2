@@ -1,30 +1,46 @@
+# Declare variables
 from random import randint
-x = randint(7,19)
+x = randint(4, 19)
+# For simplicity, ensure the value of x is even
+while x % 2 != 0:
+    x = randint(4, 19)
 a = randint(2,13)
-b = randint(15,35)
-while b - (a * x) >= 0:
-    b = randint(15, 35)
-total = x + (x * a) + ((x * a) - b)
+# For simplicity, ensure the value of a is even
+while a % 2 != 0:
+    a = randint(2, 13)
+
+j = x * a
+
+b = randint(16, 37)
+# b can not be greater than j, otherwise Nicki would have more cards than Jake
+while b - j >= 0:
+    b = randint(16, 37)
+
+n = j - b
+total = x + j + n
+
+# State problem
 print('Jake has',a,'times as many Pokemon cards as Mark, and',b,'more cards than Nicki. If Jake, Mark, and Nicki\n'\
     'have',total,'Pokemon cards between the three of them,')
 
+# Create main function
 def main():
     jake = eval(input('How many cards does Jake have?\t'))
-    if jake == x * a:
+    if jake == j:
         print('Great Job!')
     else:
-        while jake != x * a:
+        while jake != j:
             jake = eval(input('Sorry, that is the wrong answer. Please try again. How many cards does Jake have?\t'))
-            if jake == x * a:
+            if jake == j:
                 print('Great Job!')
 
     nicki = eval(input('How many cards does Nicki have?\t'))
-    if nicki == ((x * a) - b):
+    if nicki == n:
         print('Great Job!')
     else:
-        while nicki != ((x * a) - b):
+        while nicki != n:
             nicki = eval(input('Sorry, that is the wrong answer. Please try again. How many cards does Nicki have?\t'))
-            if nicki == ((x * a) - b):
+            if nicki == n:
                 print('Great Job!')
 
     mark = eval(input('How many cards does Mark have?\t'))
