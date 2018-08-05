@@ -10,8 +10,7 @@ def getRed(times,var1,var2):
     r = times * getBlue(var1,var2)
     return r
 
-def getTotal(times,var1,var2):
-    t = var1 + getBlue(var1, var2) + getRed(times,var1,var2)
+def getTotal(times,var1,var2):    t = var1 + getBlue(var1, var2) + getRed(times,var1,var2)
     return t
 
 def main():
@@ -66,15 +65,3 @@ def main():
                 print(right)
 
 main()
-
-
-
-
-
-
-
-
-
-
-
-
