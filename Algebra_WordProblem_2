@@ -1,0 +1,39 @@
+from random import randint
+x = randint(7,19)
+a = randint(2,13)
+b = randint(15,35)
+while b - (a * x) >= 0:
+    b = randint(15, 35)
+total = x + (x * a) + ((x * a) - b)
+print('Jake has',a,'times as many Pokemon cards as Mark, and',b,'more cards than Nicki. If Jake, Mark, and Nicki\n'\
+    'have',total,'Pokemon cards between the three of them,')
+
+def main():
+    jake = eval(input('How many cards does Jake have?\t'))
+    if jake == x * a:
+        print('Great Job!')
+    else:
+        while jake != x * a:
+            jake = eval(input('Sorry, that is the wrong answer. Please try again. How many cards does Jake have?\t'))
+            if jake == x * a:
+                print('Great Job!')
+
+    nicki = eval(input('How many cards does Nicki have?\t'))
+    if nicki == ((x * a) - b):
+        print('Great Job!')
+    else:
+        while nicki != ((x * a) - b):
+            nicki = eval(input('Sorry, that is the wrong answer. Please try again. How many cards does Nicki have?\t'))
+            if nicki == ((x * a) - b):
+                print('Great Job!')
+
+    mark = eval(input('How many cards does Mark have?\t'))
+    if mark == x:
+        print('Great Job!')
+    else:
+        while mark != x:
+            mark = eval(input('Sorry, that is the wrong answer. Please try again. How many cards does Mark have?\t'))
+            if mark == x:
+                print('Great Job!')
+
+main()
